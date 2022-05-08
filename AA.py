@@ -1,20 +1,24 @@
 import sys
-sys.stdin=open("input.txt", "rt")
+#sys.stdin=open("input.txt", "rt")
 
-n, m = map(int,input().split())
-cnt = [0]*(n+m+3)
-max=-2147000000
+n = int(input())
+a = list(map(int, input().split()))
+max = -214000000
 
-for i in range(1, n+1):
-    for j in range(1, m+1):
-        cnt[i+j]+=1
+def digit_sum(x):
+    sum = 0
+    for i in str(x):
+        sum += int(i)
 
-'''
-for i in range(n+m+1):
-    if cnt[i]>max:
-        max=cnt[i]
+    return sum
 
-for i in range(n+m+1):
-    if cnt[i]==max:
-        print(i, end=' ')
-'''
+for x in a:
+    tot = digit_sum(x)
+    if tot > max:
+        max = tot
+        res = x
+
+print(res)
+
+
+
