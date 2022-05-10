@@ -1,25 +1,28 @@
 import sys
-#sys.stdin=open("input.txt", "rt")
+sys.stdin=open("input.txt", "rt")
 
 n = int(input())
 a = list(map(int, input().split()))
-max = -214000000
 
-def digit_sum(x):
-    sum = 0
-    for i in str(x):
-        sum += int(i)
+def reverse(x):
+    res = 0
+    while x>0:
+        t = x % 10
+        res = res * 10 + t
+        x = x // 10
+    return res
 
-    return sum
+def isPrime(x):
+    if x==1:
+        return False
+    for i in range(2, x//2+1):
+        if x % i == 0:
+            return False
+    else:
+        return True
+
 
 for x in a:
-    tot = digit_sum(x)
-    if tot > max:
-        max = tot
-        res = x
-
-
-print(res)
-
-
-
+    res = reverse(x)
+    if(isPrime(res)):
+        print(res)
