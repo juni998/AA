@@ -11,8 +11,8 @@
 <br>
 
 > 코드 구현 능력 구하기
->
 > 
+> [문제해석 및 풀이](https://www.notion.so/0d7617f4d21a440ebf01bc6dc1a28947)
 
 <br>
 
