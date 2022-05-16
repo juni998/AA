@@ -34,7 +34,8 @@
 <br>
 
 1. [회문 문자열 검사](https://github.com/juni998/AA/blob/master/coding_test/simulation/python_test_2.1.py)
-  - [파이썬 풀이](https://github.com/juni998/AA/blob/master/coding_test/simulation/python_test_2.1.1.py)
+    - [파이썬 풀이](https://github.com/juni998/AA/blob/master/coding_test/simulation/python_test_2.1.1.py)
+
 <br>
 
 [출처](https://inf.run/m1HV)
